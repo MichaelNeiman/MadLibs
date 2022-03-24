@@ -1,0 +1,163 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;900&family=Ubuntu:wght@300;400;700&display=swap");
+
+/* Base stylings */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 10px;
+}
+
+#middle {
+  background-image: linear-gradient(to right, #0f0f0f83, #0f0f0f83),
+    url("./middle.webp");
+}
+
+#upper {
+  background-image: linear-gradient(to right, #0f0f0f83, #0f0f0f83),
+    url("./upper.webp");
+}
+
+.division a {
+  text-decoration: none;
+  color: white;
+  font-size: clamp(1.3rem, 2vw, 2.5rem);
+  border-bottom: solid 1px white;
+  transition: ease-in-out 0.2s;
+}
+
+.division a:hover {
+  color: #e6a714;
+  border-bottom: solid 1px #e6a714;
+}
+
+.division-gallery h2 {
+  grid-column: 1 / -1;
+
+}
+
+.card a {
+  margin-left: auto;
+  text-decoration: none;
+  color: white;
+  border-bottom: solid 1px white;
+  background: #e6a714;
+  padding: 5px 40px;
+  transition: ease-in-out 0.2s;
+}
+
+.card a:hover {
+  background: #e9c87d;
+}
+
+.reader-deets {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.reader-deets img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.hero-text p {
+  font-size: clamp(1.3rem, 2vw, 2.5rem);
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Start your work below this comment */
+.hero {
+  display: grid;
+  place-items: center center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #0f0f0f83, #0f0f0f83),
+    url("./poem-hero.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.img-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+
+}
+
+.divisions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.division {
+  display: grid;
+  place-items: center center;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.division-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  grid-row-gap: 40px;
+  min-height: 50vh;
+  margin: 10vh 0;
+}
